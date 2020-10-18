@@ -1,0 +1,192 @@
+/* primary #757575; */
+/* title #212121; */
+/* accent #2196F3; */
+/* Footer contacts rgba(255, 255, 255, 0.6 */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --primary-white-color: #ffffff;
+  --primary-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
+}
+/* Отключает точки в списках */
+.list {
+  list-style: none;
+}
+
+/* Уберает нижнее подчеркивание для ссылок класса "link" */
+.link {
+  text-decoration: none;
+}
+
+/* Стили цвета для текста body  */
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+
+  background-color: var(--primary-white-color: #ffffff);
+}
+
+/* Стили для ссылок навигации */
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Стили для логотипа */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo .logo-web {
+  color: var(--accent-text-color);
+}
+
+.logo-header .logo-studio {
+  color: var(--title-text-color);
+}
+.logo-footer .logo-studio {
+  color: var(--primary-white-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-text-color);
+}
+
+/* Стили для h2 заголовков */
+.section .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Стили секции Героя */
+.hero .title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero {
+  background-color: var(--primary-bg-color);
+}
+
+/* Стили для секции Преимущества */
+.features-list .title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: left;
+}
+.features-list .text {
+  line-height: 1.71;
+}
+/* Стили для секции Команда */
+.our-team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-list .title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+}
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Стили для списка портфолио */
+.portfolio-list .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.portfolio-list .text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Стили для кнопок */
+.button {
+  font-family: Roboto;
+  font-size: 16px;
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+  font-weight: 700;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+}
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--accent-text-color);
+  background-color: var(--primary-white-color);
+}
+
+/*Стили для подвала */
+.footer {
+  background-color: var(--primary-bg-color);
+}
+
+/* Стили для контактов почты и тел. */
+
+.contacts-header .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-footer {
+  font-style: normal;
+  line-height: 1.71;
+}
+.contacts-footer .link {
+  color: var(--footer-contacts-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Стили для локации офиса*/
+.contacts .location {
+  color: var(--primary-white-color);
+}
