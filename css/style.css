@@ -48,6 +48,9 @@ body {
 
 /* Стили для логотипа */
 .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
   color: var(--accent-text-color);
   font-family: Raleway;
   font-weight: 700;
@@ -251,4 +254,13 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+/* Оступы для ссылок в футере */
+.contacts-footer > .link {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+.contacts-footer .link:last-child {
+  margin-bottom: 0;
 }
