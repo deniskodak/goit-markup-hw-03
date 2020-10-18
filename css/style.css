@@ -33,9 +33,38 @@ body {
 
   background-color: var(--primary-white-color: #ffffff);
 }
+/* Флекс-стили для навигации */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-nav .item:not(:last-child),
+.contacts-header .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 /* Стили для ссылок навигации */
-.site-nav .link {
+.site-nav .link,
+.contacts-header .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -48,8 +77,8 @@ body {
 
 /* Стили для логотипа */
 .logo {
-  display: inline-block;
-  margin-bottom: 20px;
+  /* display: inline-block;
+  margin-bottom: 20px; */
 
   color: var(--accent-text-color);
   font-family: Raleway;
@@ -115,6 +144,17 @@ body {
 .section.features {
   padding-top: 39px;
 }
+
+.features-list {
+  display: flex;
+}
+.features-list .item {
+  flex-basis: 270px;
+}
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-list .title {
   font-size: 14px;
   line-height: 1.14;
@@ -218,15 +258,14 @@ body {
 
 .contacts-header .link {
   color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 .contacts-footer {
   font-style: normal;
   line-height: 1.71;
 }
 .contacts-footer .link {
+  display: inline-block;
+
   color: var(--footer-contacts-color);
 }
 .contacts .link:hover,
@@ -257,10 +296,6 @@ body {
 }
 
 /* Оступы для ссылок в футере */
-.contacts-footer > .link {
-  display: inline-block;
+.contacts-footer .link:not(:last-child) {
   margin-bottom: 9px;
-}
-.contacts-footer .link:last-child {
-  margin-bottom: 0;
 }
