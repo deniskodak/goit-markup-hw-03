@@ -14,6 +14,8 @@
 }
 /* Отключает точки в списках */
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -66,6 +68,9 @@ body {
 
 /* Стили для h2 заголовков */
 .section .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -74,21 +79,39 @@ body {
   text-align: center;
 }
 
+/* Общие стили оступов к h2 заголовков и текста */
+.features-list .title,
+.team-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.features-list .text,
+.team-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Стили секции Героя */
 .hero .title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero {
   background-color: var(--primary-bg-color);
+  text-align: center;
 }
 
 /* Стили для секции Преимущества */
+.section.features {
+  padding-top: 39px;
+}
 .features-list .title {
   font-size: 14px;
   line-height: 1.14;
@@ -97,6 +120,11 @@ body {
 }
 .features-list .text {
   line-height: 1.71;
+}
+
+/* Стили для секции Чем мы занимаемся */
+.section.service {
+  padding-top: 0;
 }
 /* Стили для секции Команда */
 .our-team {
@@ -113,15 +141,26 @@ body {
   line-height: 1.19;
   text-align: center;
 }
-
+.userpic {
+  margin-bottom: 30px;
+}
 /* Стили для списка портфолио */
 .portfolio-list .title {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
 }
+.portfolio-pic {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 .portfolio-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
@@ -129,19 +168,25 @@ body {
 
 /* Стили для кнопок */
 .button {
+  display: inline-block;
   font-family: Roboto;
   font-size: 16px;
+  border: transparent;
+  border-radius: 4px;
 }
 .button.primary {
+  padding: 10px 32px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
   font-weight: 700;
   line-height: 1.9;
-  display: flex;
   align-items: center;
   letter-spacing: 0.06em;
 }
 .button.secondary {
+  padding: 6px 22px;
+
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   font-weight: 500;
@@ -161,6 +206,8 @@ body {
 
 /*Стили для подвала */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--primary-bg-color);
 }
 
@@ -187,4 +234,21 @@ body {
 /* Стили для локации офиса*/
 .contacts .location {
   color: var(--primary-white-color);
+}
+
+/* Стили для контейнера */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid red;
+}
+
+/* Паддинги для секции */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
