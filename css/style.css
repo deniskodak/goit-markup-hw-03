@@ -46,13 +46,11 @@ body {
 
 /* Стили для логотипа */
 .logo {
+  color: var(--accent-text-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
-.logo .logo-web {
-  color: var(--accent-text-color);
 }
 
 .logo-header .logo-studio {
