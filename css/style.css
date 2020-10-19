@@ -33,6 +33,11 @@ body {
 
   background-color: var(--primary-white-color: #ffffff);
 }
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
 /* Флекс-стили для навигации */
 .header-container {
   display: flex;
