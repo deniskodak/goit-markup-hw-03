@@ -77,14 +77,16 @@ body {
 
 /* Стили для логотипа */
 .logo {
-  /* display: inline-block;
-  margin-bottom: 20px; */
+  display: block;
 
   color: var(--accent-text-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+.logo-footer {
+  margin-bottom: 20px;
 }
 
 .logo-header .logo-studio {
@@ -140,6 +142,12 @@ body {
   text-align: center;
 }
 
+/* Общие паддинги для секций  */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Стили для секции Преимущества */
 .section.features {
   padding-top: 39px;
@@ -149,7 +157,7 @@ body {
   display: flex;
 }
 .features-list .item {
-  flex-basis: 270px;
+  width: calc((100% - 3 * 30px) / 4);
 }
 .features-list .item:not(:last-child) {
   margin-right: 30px;
@@ -169,11 +177,29 @@ body {
 .section.service {
   padding-top: 0;
 }
+.service-list {
+  display: flex;
+}
+.service-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.service-list .link {
+  display: block;
+}
 /* Стили для секции Команда */
 .our-team {
   background-color: var(--secondary-bg-color);
 }
-
+.team-list {
+  display: flex;
+}
+.team-list .item {
+  background-color: var(--primary-white-color);
+  width: calc((100% - 3 * 30px) / 4);
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 .team-list .title {
   font-size: 16px;
   font-weight: 500;
@@ -184,10 +210,27 @@ body {
   line-height: 1.19;
   text-align: center;
 }
-.userpic {
+.member-content {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 /* Стили для списка портфолио */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-list .item {
+  width: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.portfolio-list .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
 .portfolio-list .title {
   margin-bottom: 4px;
 
@@ -196,9 +239,14 @@ body {
   letter-spacing: 0.06em;
   text-align: left;
 }
-.portfolio-pic {
-  margin-top: 0;
-  margin-bottom: 20px;
+
+/* Стили для портфолио карточек */
+.porfolio-link {
+  display: flex;
+  flex-direction: column;
+}
+.porfolio-content {
+  padding: 20px 24px;
 }
 .portfolio-list .text {
   margin-top: 0;
@@ -209,6 +257,15 @@ body {
   line-height: 1.9;
 }
 
+/* Стили для кнопоко порфолио */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
+}
 /* Стили для кнопок */
 .button {
   display: inline-block;
@@ -287,12 +344,6 @@ body {
   padding-right: 15px;
 
   outline: 2px solid red;
-}
-
-/* Паддинги для секции */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* Оступы для ссылок в футере */

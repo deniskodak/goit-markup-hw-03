@@ -14,23 +14,23 @@
   <body>
     <!-- Шапка -->
     <header>
-      <div class="container">
-      <nav>
+      <div class="container header-container">
+      <nav class="nav-container">
         <a class="logo logo-header link" href="./">
          Web<span class="logo-studio">Studio</span>
         </a>
         <ul class="site-nav list">
-          <li><a class="link" href="index.html">Студия</a></li>
-          <li><a class="link" href="portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="#footer">Контакты</a></li>
+          <li class="item"><a class="link" href="index.html">Студия</a></li>
+          <li class="item"><a class="link" href="portfolio.html">Портфолио</a></li>
+          <li class="item"><a class="link" href="#footer">Контакты</a></li>
         </ul>
       </nav>
     
       <ul class="contacts contacts-header list">
-        <li>
+        <li class="item">
           <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li>
+        <li class="item">
           <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
@@ -41,112 +41,130 @@
     <section class="section">
       <div class="container">
       <h1 hidden>Портфолио</h1>
-      <ul class="list">
-        <li><button type="button" class="button secondary">Все</button></li>
-        <li><button type="button" class="button secondary">Веб-сайты</button></li>
-        <li><button type="button" class="button secondary">Приложения</button></li>
-        <li><button type="button" class="button secondary">Дизайн</button></li>
-        <li><button type="button" class="button secondary">Маркетинг</button></li>
+      <ul class="filter-list list">
+        <li class="item"><button type="button" class="button secondary">Все</button></li>
+        <li class="item"><button type="button" class="button secondary">Веб-сайты</button></li>
+        <li class="item"><button type="button" class="button secondary">Приложения</button></li>
+        <li class="item"><button type="button" class="button secondary">Дизайн</button></li>
+        <li class="item"><button type="button" class="button secondary">Маркетинг</button></li>
       </ul>
 
       <ul class="portfolio-list list">
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic"
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img 
               src="./images/portfolio/img1.jpg"
               alt="сайт технокряк"
               width="370"
             />
+            <div class="porfolio-content">
             <h2 class="title">Технокряк</h2>
             <p class="text">Веб-сайт</p>
+            </div>
             </a>
         </li>
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic"
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img 
               src="./images/portfolio/img2.jpg"
               alt="постер нью орлеан против голден стар"
               width="370"
             />
-            <h2 class="title">Постер New Orlean vs Golden Star</h2>
-            <p class="text">Дизайн</p>
+            <div class="porfolio-content">
+              <h2 class="title">Постер New Orlean vs Golden Star</h2>
+              <p class="text">Дизайн</p>
+            </div>
             </a>
         </li>
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic"
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img
               src="./images/portfolio/img3.jpg"
               alt="приложение для ресторана"
               width="370"
             />
-            <h2 class="title">Ресторан Seafood</h2>
-            <p class="text">Приложение</p>
+            <div class="porfolio-content">
+              <h2 class="title">Ресторан Seafood</h2>
+              <p class="text">Приложение</p>
+            </div>
             </a>
         </li>
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic"
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img
               src="./images/portfolio/img4.jpg"
               alt="проект прайм"
               width="370"
             />
-            <h2 class="title">Проект Prime</h2>
-            <p class="text">Маркетинг</p>
+            <div class="porfolio-content">
+              <h2 class="title">Проект Prime</h2>
+              <p class="text">Маркетинг</p>
+            </div>
             </a>
         </li>
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic"
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img
               src="./images/portfolio/img5.jpg"
               alt="приложение боксес"
               width="370"
             />
-            <h2 class="title">Проект Boxes</h2>
-            <p class="text">Приложение</p>
+            <div class="porfolio-content">
+              <h2 class="title">Проект Boxes</h2>
+              <p class="text">Приложение</p>
+            </div>
             </a>
         </li>
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic"
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img
               src="./images/portfolio/img6.jpg"
               alt="сайт у вдохновения нет границ"
               width="370"
             />
-            <h2 class="title">Inspiration has no Borders</h2>
-            <p class="text">Веб-сайт</p>
+            <div class="porfolio-content">
+              <h2 class="title">Inspiration has no Borders</h2>
+              <p class="text">Веб-сайт</p>
+            </div>
             </a>
         </li>
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic"
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img
               src="./images/portfolio/img7.jpg"
               alt="дизайн лимитед эдишн"
               width="370"
             />
-            <h2 class="title">Издание Limited Edition</h2>
-            <p class="text">Дизайн</p>
+            <div class="porfolio-content">
+              <h2 class="title">Издание Limited Edition</h2>
+              <p class="text">Дизайн</p>
+            </div>
             </a>
         </li>
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic"
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img
               src="./images/portfolio/img8.jpg"
               alt="проект лаб"
               width="370"
             />
-            <h2 class="title">Проект LAB</h2>
-            <p class="text">Маркетинг</p>
+            <div class="porfolio-content">
+              <h2 class="title">Проект LAB</h2>
+              <p class="text">Маркетинг</p>
+            </div>
             </a>
         </li>
-        <li>
-          <a class="link" href="">
-            <img class="portfolio-pic" 
+        <li class="item">
+          <a class="porfolio-link link" href="">
+            <img
               src="./images/portfolio/img9.jpg"
               alt="приложение растущий бизнес"
               width="370"
             />
-            <h2 class="title">Growing Business</h2>
-            <p class="text">Приложение</p>
+            <div class="porfolio-content">
+              <h2 class="title">Growing Business</h2>
+              <p class="text">Приложение</p>
+            </div>
             </a>
         </li>
       </ul>
