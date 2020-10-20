@@ -80,6 +80,10 @@ img {
   color: var(--accent-text-color);
 }
 
+/* Стиль "Текущая страница" */
+.site-nav .link.current {
+  color: var(--accent-text-color)
+}
 /* Стили для логотипа */
 .logo {
   display: block;
